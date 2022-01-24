@@ -1,25 +1,18 @@
-function ePar(numero) {
-    for (let divisor = 2; divisor <= Math.sqrt(numero); divisor++) {
-        if (numero % divisor == 0) {
-            return true;
-        }
+var f2 = 0;
+var f1 = 1;
+var count = 0
+var swap
+function fibonacci(num){
+  for(i = 0; i < num; i++) {
 
-    }
-    return false;
+    swap = f2 + f1;
+    f1= f2;
+    f2= swap;
+    count++;
+    
+    console.log(swap);
 }
-function positivos(numero){
-        for(let numero; numero>=0; numero++){
-            return true;
-        }
-return false;
-
-}
-
-function Soma(inicio, fim) {
-    for (let i = inicio; i <= fim; i= i+i) {
-        if (ePar(i)); (positivos(i));
-    }
-    return i++
 }
 
-roma(0, 10);
+
+fibonacci(100)
