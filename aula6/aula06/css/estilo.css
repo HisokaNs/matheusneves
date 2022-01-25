@@ -1,3 +1,8 @@
+
+body{
+  overflow-x: hidden;
+}
+
 :root {
     --blue: rgb(67, 112, 180);
     --white: #fff;
@@ -214,6 +219,7 @@
     margin: 0px 50px;
     color: var(--gray);
     border-top: 1px solid #aaa;
+    flex-wrap:wrap-reverse;
   }
   
   footer div {
@@ -235,6 +241,8 @@
  
   .media-pic{
     width: 20px;
+    
+
   }
   
   @media only screen and (max-width: 1900px) {
