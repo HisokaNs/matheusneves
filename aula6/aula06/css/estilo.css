@@ -11,7 +11,7 @@
     box-sizing: border-box;
   }
   
-  /* @media (min-width:1000px) { */
+  
   header {
     background-image: url(../images/banner.jpg);
     background-size: cover;
@@ -65,9 +65,7 @@
     font-size: 0.9em;
   }
   
-  /* 
-   Main começa aqui
-  */
+  
   .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -76,6 +74,7 @@
   .news, .staff, .products {
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding: 80px 50px 100px;
 }
 
@@ -203,9 +202,7 @@
     margin-bottom: 30px;
   }
   
-  /* 
-   Footer
-  */
+  
   footer,
   footer ul {
     display: flex;
@@ -235,10 +232,7 @@
     color: var(--blue);
   }
   
-  /* } */
-  
-  /* testes de recursos CSS 3 da aula 
-  */
+ 
   .media-pic{
     width: 20px;
   }
@@ -259,16 +253,17 @@
     }
     .staff div {
       margin-left: 20%;
-      background-color: black;
+      
     }
     .products {
       text-align: center;
+      
   
     }
     .products div a{
-      background-color: black;
+      
       display: inline-block;
-  
+      
       width: 300px;
   }
   
