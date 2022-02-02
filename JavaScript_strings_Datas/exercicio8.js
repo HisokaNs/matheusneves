@@ -37,54 +37,6 @@ window.onload = function () {
      }
 
      
-    function dataPorExtenso(date)
-    {
-        let dateSplited = date.split("-"); 
-        let month = dateSplited[1];
-        let year = dateSplited[0];
-
-        switch (month) {
-            case '01':
-                return `${day} de janeiro de ${year}`;
-                break;
-            case '02':
-                return `${day} de fevereiro de ${year}`;
-                break;
-            case '02':
-                return `${day} de março de ${year}`;
-                break;
-            case '04':
-                return `${day} de abril de ${year}`;
-                break;
-            case '05':
-                return `${day} de maio de ${year}`;
-                break;
-            case '06':
-                return `${day} de junho de ${year}`;
-                break;
-            case '07':
-                return `${day} de julho de ${year}`;
-                break;
-            case '08':
-                return `${day} de agosto de ${year}`;
-                break;
-            case '09':
-                return `${day} de setembro de ${year}`;
-                break;
-            case '10':
-                return `${day} de outubro de ${year}`;
-                break;
-            case '11':
-                return `${day} de novembro de ${year}`;
-                break;
-            case '12':
-                return `${day} de dezembro de ${year}`;
-                break;                                
-            default:
-                return "mês inválido";
-                break;
-        }
-    }
 
     
     function distanciaEmSemanas(date1, date2)
