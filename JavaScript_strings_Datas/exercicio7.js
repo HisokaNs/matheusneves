@@ -39,7 +39,7 @@ window.onload = function () {
            case '02':
                return `${day} de fevereiro de ${year}`;
                break;
-           case '02':
+           case '03':
                return `${day} de março de ${year}`;
                break;
            case '04':
