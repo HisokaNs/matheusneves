@@ -12,7 +12,7 @@
 }
 
 
-/* Style */
+
 * {
     font-family: 'Work Sans', Geneva, Tahoma, sans-serif;
 }
@@ -39,12 +39,12 @@ p {
     padding: 0 30px;
 }
 
-/* rounded button */
+
 .rounded-button {
     border-radius: 80px 80px 80px 80px;
 }
 
-/* rows of cards (section gray, footer) */
+
 .rows {
     display: flex;
     flex-wrap: wrap;
@@ -55,9 +55,7 @@ p {
     padding: 0px 25px;
 }
 
-/**********************
-**** Header
-***********************/
+
 #banner {
     height: 70vh;
     display: flex;
@@ -102,11 +100,9 @@ p {
 }
 
 
-/**********************
-**** main
-***********************/
 
-/* Main columns */
+
+
 .two-columns {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +151,7 @@ main .main-content .text > p {
 }
 
 
-/* aside */
+
 main aside h3 {
     font-size: 1.4em;
     font-weight: bold;
@@ -198,9 +194,7 @@ main aside .post .post-content p {
     margin-left: 20px;
 }
 
-/**********************
-**** main section gray
-***********************/
+
 
 #section-gray {
     background-color: var(--background-gray);
@@ -244,9 +238,7 @@ main aside .post .post-content p {
     background-color: var(--background-button-hover);
 }
 
-/**********************
-**** footer
-***********************/
+
 
 footer {
     background-color: var(--background-footer);
@@ -289,11 +281,7 @@ footer .list-posts li a {
 }
 
 
-/*********************
-****** Media Screen 
-**********************/
 
-/* Media screen 960px */
 @media only screen and (max-width: 1120px) {
    
     #section-gray .rows > * {
@@ -305,10 +293,10 @@ footer .list-posts li a {
     }
 }
 
-/* Media screen 960px */
+
 @media only screen and (max-width: 750px) {
 
-    /* header */
+    
     #banner h1 {
         font-size: 3.2em;
     }
@@ -317,7 +305,7 @@ footer .list-posts li a {
         font-size: 0.75em;
     }
 
-    /* main */
+   
     main .two-columns {
         flex-direction: column;
     }
@@ -330,7 +318,7 @@ footer .list-posts li a {
         width: 100%;
     }
 
-    /* Section grey */
+    
     #section-gray .rows > * {
         max-width: 100%;
     }
@@ -341,10 +329,10 @@ footer .list-posts li a {
 }
 
 
-/* Media screen 960px */
+
 @media only screen and (max-width: 540px) {
 
-    /* header */
+    
     #banner h1 {
         font-size: 2.7em;
     }
@@ -362,13 +350,13 @@ footer .list-posts li a {
         margin-top: 50px;
     }
 
-    /* section gray */
+    
 
     #section-gray .cards .card h3 {
         white-space: normal;
     }
 
-    /* footer */
+   
     footer .rows > * {
         max-width: 50%;
     }
