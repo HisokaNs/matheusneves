@@ -1,0 +1,399 @@
+
+
+:root {
+    --color-black: #3a3a3a;
+    --title-aside: #a8a7a7;
+    --background-gray: #F3F3F2;
+    --background-button: #E95C3C;
+    --background-button-hover: #d4563a;
+    --background-footer: #1C1C1C;
+    --footer-line: #5a5858;
+    --footer-font: #b8b4b4;
+}
+
+
+/* Style */
+* {
+    font-family: 'Work Sans', Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    color: var(--color-black);
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.9em;
+    color: #000000;
+}
+
+p {
+    line-height: 1.5em;
+    font-size: 0.95em;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* rounded button */
+.rounded-button {
+    border-radius: 80px 80px 80px 80px;
+}
+
+/* rows of cards (section gray, footer) */
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rows > * {
+    max-width: 33.333333%;
+    padding: 0px 25px;
+}
+
+/**********************
+**** Header
+***********************/
+#banner {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: url("banner.jpg") no-repeat;
+    background-size: cover;
+    
+}
+
+#banner h1 {
+    font-size: 4.2em;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+#banner nav {
+    margin-top: 50px;
+}
+
+#banner nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+#banner nav ul li a{
+    padding: 20px;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #FFFFFF;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+#banner .actived{
+    border: 2px solid #FFFFFF;
+}
+
+
+/**********************
+**** main
+***********************/
+
+/* Main columns */
+.two-columns {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.two-columns > * {
+    margin-top: 30px;
+    margin-bottom: 80px;
+    padding: 0px 20px;
+}
+
+.two-columns > :first-child {
+    width: 65%;
+}
+
+.two-columns aside {
+    width: 35%;
+}
+
+main {
+    width: 100%;
+}
+
+main .main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+main .main-content header {
+    margin-bottom: 25px;
+}
+
+main .main-content header h2 {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+main .main-content header p {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+main .main-content .text > p {
+    margin-top: 20px;
+}
+
+
+/* aside */
+main aside h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+main aside .posts {
+    margin-top: 40px;
+}
+
+main aside .posts .post {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--background-gray);
+}
+
+main aside .posts .post:last-child {
+    border: none;
+}
+
+main aside .post h4 {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: var(--title-aside);
+    font-weight: bold;
+}
+
+main aside .post .post-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-top: 30px;
+}
+
+main aside .post .post-content img {
+    max-width: 70px;
+    max-height: 70px;
+}
+
+main aside .post .post-content p {
+    margin-left: 20px;
+}
+
+/**********************
+**** main section gray
+***********************/
+
+#section-gray {
+    background-color: var(--background-gray);
+    padding: 60px 0px; 
+}
+
+#section-gray .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#section-gray .card-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#section-gray .card h3{
+    white-space: nowrap;
+    color: var(--color-black);
+    font-weight: bold;
+}
+
+#section-gray .card img{
+    margin: 30px 0 20px 0;
+}
+
+#section-gray .card .rounded-button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: var(--background-button);
+    color: #FFFFFF;
+}
+
+#section-gray .card .rounded-button:hover {
+    background-color: var(--background-button-hover);
+}
+
+/**********************
+**** footer
+***********************/
+
+footer {
+    background-color: var(--background-footer);
+    padding: 80px 0 30px 0;
+}
+
+footer .rows {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .rows .list-posts {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer .list-posts h3{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+footer .list-posts ul{
+    margin-top: 30px;
+}
+
+footer .list-posts ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid var(--footer-line);
+    color: var(--footer-font);
+}
+
+footer .list-posts ul li:last-child{
+    border: none;
+}
+
+footer .list-posts li a {
+    color: var(--footer-font);
+}
+
+
+/*********************
+****** Media Screen 
+**********************/
+
+/* Media screen 960px */
+@media only screen and (max-width: 1120px) {
+   
+    #section-gray .rows > * {
+        max-width: 50%;
+    }
+
+    #section-gray .card {
+        margin-top: 60px;
+    }
+}
+
+/* Media screen 960px */
+@media only screen and (max-width: 750px) {
+
+    /* header */
+    #banner h1 {
+        font-size: 3.2em;
+    }
+
+    #banner nav {
+        font-size: 0.75em;
+    }
+
+    /* main */
+    main .two-columns {
+        flex-direction: column;
+    }
+
+    main .two-columns .main-content {
+        width: 100%;
+    }
+
+    main .two-columns aside {
+        width: 100%;
+    }
+
+    /* Section grey */
+    #section-gray .rows > * {
+        max-width: 100%;
+    }
+
+    #section-gray .cards .card a{
+        float: right;
+    }
+}
+
+
+/* Media screen 960px */
+@media only screen and (max-width: 540px) {
+
+    /* header */
+    #banner h1 {
+        font-size: 2.7em;
+    }
+
+    #banner nav{
+        margin: 0;
+    }
+
+    #banner nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #banner nav ul li{
+        margin-top: 50px;
+    }
+
+    /* section gray */
+
+    #section-gray .cards .card h3 {
+        white-space: normal;
+    }
+
+    /* footer */
+    footer .rows > * {
+        max-width: 50%;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin:0;
+    padding:0;
+    font-weight:normal;
+}
+
+ol, ul {
+    list-style:none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
